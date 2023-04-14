@@ -36,7 +36,7 @@ header {
 }
 
 #content {
-    padding:5%;
+    padding:1%;
     display:flex;
     flex-direction:column;
 }
@@ -56,5 +56,10 @@ header {
 }
 .naranja {
     color:faaf40;
+}
+
+#visor_pdf {
+    width:50%;
+    height:950px;
 }
 
