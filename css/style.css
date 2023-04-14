@@ -30,21 +30,23 @@ header {
     margin: 0 auto;
 }
 
-#logo_cabecera {
+#ico {
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+#cabecera,
+#apoyatura,
+#pie {
     max-width: 90%;
     margin: 0 auto;
 }
 
 #content {
-    padding:1%;
+    padding:2%;
     display:flex;
     flex-direction:column;
 }
-
-#content img {
-    margin: 5%;
-}
-
 .marron_claro {
     color:c1b49a;
 }
@@ -56,4 +58,9 @@ header {
 }
 .naranja {
     color:faaf40;
+}
+p.auto {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
