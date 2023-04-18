@@ -1,9 +1,8 @@
-
 * {
 	font-family: 'Alegreya Sans', sans-serif;
     box-sizing: content-box;
-	
 }
+
 
 body {
     padding:0;
@@ -25,27 +24,83 @@ header {
     background: inherit;
 }
 
+a {
+	font-size:1.5em;
+    color:#faaf40;
+	font-style:italic;
+}
+p {
+	font-size:1.1em;
+}
+
 #logo {
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
 #ico {
-    max-width: 30%;
+    max-width: 20%;
     margin: 0 auto;
 }
-
-#cabecera,
-#apoyatura,
+#pie,
+#cabecera {
+    width:96%;
+    display:block;
+    background-position:center center;
+    background-attachment:fixed;
+	background-size:auto auto;
+	overflow:hidden;
+}
+#cabecera {
+    background-image: url("https://www.cardas.com.ar/img/fondo.jpg");
+}
 #pie {
-    max-width: 90%;
-    margin: 0 auto;
+    background-image: url("https://www.cardas.com.ar/img/fondo_pie.jpg");
+}
+#fila {
+    padding:2%;
+	width:96%;
+    display:block;
+	align-items:center;
+}
+#fila_flex {
+    padding:2%;
+	width:96%;
+    display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	flex-grow:4;
+    justify-content:space-around;
+	align-items:center;
+}
+#columna {
+    padding:1%;
+    display:flex;
+	flex-flow:column wrap;
+	min-width:100px; 
+	width:28%;
+	align-self:center;
+}
+.col1 {
+  flex-grow:5;
+}
+.col2 {
+  flex-grow:10;
+}
+.col3 {
+  flex-grow:5;
 }
 
-#content {
+#visor_pdf {
     padding:2%;
-    display:flex;
-    flex-direction:column;
+	display:block;
+	width:50%;
+	height:auto;
+	text-align:center;
+}
+iframe {
+	width:100%;
+	height:1050px;
 }
 .marron_claro {
     color:c1b49a;
@@ -58,9 +113,4 @@ header {
 }
 .naranja {
     color:faaf40;
-}
-p.auto {
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
