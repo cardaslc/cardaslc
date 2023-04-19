@@ -1,116 +1,112 @@
+:root {
+    --marron_claro:  #c1b49a;
+    --marron_medio: #9a8479;
+    --marron_oscuro: #8a5d3b;
+    --naranja: #faaf40;
+    --blanco: #fff;
+}
+
 * {
 	font-family: 'Alegreya Sans', sans-serif;
     box-sizing: content-box;
 }
 
-
 body {
-    padding:0;
-    margin:0;
-    text-align:center;
-    background:#fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-header {
-    min-height: 100px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    background: inherit;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: var(--blanco);
+    display: block;
 }
 
 a {
-	font-size:1.5em;
-    color:#faaf40;
-	font-style:italic;
+	font-size: 1.5em;
+    color: var(--naranja);
+	font-style: italic;
 }
 p {
-	font-size:1.1em;
+	font-size: 1.1em;
 }
 
-#logo {
+.logo img {
     max-width: 85%;
     margin: 0 auto;
 }
-
-#ico {
+.ico {
     max-width: 20%;
     margin: 0 auto;
 }
-#pie,
-#cabecera {
-    width:96%;
-    display:block;
-    background-position:center center;
-    background-attachment:fixed;
-	background-size:auto auto;
-	overflow:hidden;
+
+.pie,
+.cabecera {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-position: center;
+	background-size: auto 100%;
 }
-#cabecera {
-    background-image: url("https://www.cardas.com.ar/img/fondo.jpg");
+.cabecera {
+    background-image: url("../img/fondo.jpg");
 }
-#pie {
-    background-image: url("https://www.cardas.com.ar/img/fondo_pie.jpg");
-}
-#fila {
-    padding:2%;
-	width:96%;
-    display:block;
-	align-items:center;
-}
-#fila_flex {
-    padding:2%;
-	width:96%;
-    display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-	flex-grow:4;
-    justify-content:space-around;
-	align-items:center;
-}
-#columna {
-    padding:1%;
-    display:flex;
-	flex-flow:column wrap;
-	min-width:100px; 
-	width:28%;
-	align-self:center;
-}
-.col1 {
-  flex-grow:5;
-}
-.col2 {
-  flex-grow:10;
-}
-.col3 {
-  flex-grow:5;
+.pie {
+    background-image: url("../img/fondo_pie.jpg");
 }
 
-#visor_pdf {
-    padding:2%;
-	display:block;
-	width:50%;
-	height:auto;
-	text-align:center;
+.apoyatura {
+    width: 70%;
 }
-iframe {
-	width:100%;
-	height:1050px;
+
+.fila {
+    padding: 2%;
+	width: 96%;
+    display: block;
+	align-items: center;
 }
-.marron_claro {
-    color:c1b49a;
+.fila.flex {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-grow: 4;
+    justify-content: space-around;
 }
-.marron_medio {
-    color:9a8479;
+
+.columna {
+    padding: 1%;
+    display: flex;
+	flex-flow: column wrap;
+	min-width: 100px;
+	align-self: center;
 }
-.marron_oscuro {
-    color:8a5d3b;
+
+.col_a {
+    flex-grow: 5;
+    width: 28%;
 }
-.naranja {
-    color:faaf40;
+.col_b {
+    flex-grow: 10;
+    width: 35%;
+}
+
+.visor_pdf {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+	text-align: center;
+}
+.visor_pdf iframe {
+    width: 60%;
+	height: 900px;
+}
+
+.text-marron_claro {
+    color: var(--marron_claro);
+}
+.text-marron_medio {
+    color: var(--marron_medio);
+}
+.text-marron_oscuro {
+    color: var(--marron_oscuro);
+}
+.text-naranja {
+    color: var(--naranja);
 }
