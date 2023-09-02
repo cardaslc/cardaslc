@@ -47,16 +47,6 @@ p.des {
     margin: 0 auto;
 }
 
-.pro {
-    text-align: left;
-	border-bottom: 1px dotted var(--marron_claro);
-}
-
-img.pro {
-    max-width: 90%;
-    margin: 0 auto;
-}
-
 .pie,
 .cabecera {
     width: 100%;
@@ -75,11 +65,25 @@ img.pro {
     width: 70%;
 }
 
+.pro {
+    text-align: left;
+	border-bottom: 1px dotted var(--marron_oscuro);
+	background-color:var(--marron_claro_2);
+}
+
+img.pro {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.fila#enlaces {
+	align-items: center;
+}
 .fila {
     padding: 2%;
 	width: 96%;
     display: block;
-	align-items: center;
+	align-items: flex-start;
 }
 .fila.flex {
     display: flex;
@@ -94,7 +98,7 @@ img.pro {
     display: flex;
 	flex-flow: column wrap;
 	min-width: 100px;
-	align-self: center;
+	align-self: top;
 }
 
 .col_a {
@@ -114,7 +118,6 @@ img.pro {
     flex-grow: 10;
     width: 50%;
     padding: 0% 2%;
-	background-color:var(--marron_claro_2);
 }
 
 .visor_pdf {
