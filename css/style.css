@@ -1,5 +1,6 @@
 :root {
-    --marron_claro:  #c1b49a;
+    --marron_claro_2: #ebe0ca;
+    --marron_claro: #c1b49a;
     --marron_medio: #9a8479;
     --marron_oscuro: #8a5d3b;
     --naranja: #faaf40;
@@ -27,13 +28,32 @@ a {
 p {
 	font-size: 1.1em;
 }
-
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+p.des {
+	font-size: 1.1em;
+}
 .logo img {
     max-width: 85%;
     margin: 0 auto;
 }
 .ico {
     max-width: 20%;
+    margin: 0 auto;
+}
+
+.pro {
+    text-align: left;
+	border-bottom: 1px dotted var(--marron_claro);
+}
+
+img.pro {
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -46,12 +66,11 @@ p {
 	background-size: auto 100%;
 }
 .cabecera {
-    background-image: url("../img/fondo.jpg");
-}
-.pie {
     background-image: url("../img/fondo_pie.jpg");
 }
-
+.pie {
+    background-image: url("../img/fondo.jpg");
+}
 .apoyatura {
     width: 70%;
 }
@@ -85,6 +104,17 @@ p {
 .col_b {
     flex-grow: 10;
     width: 35%;
+}
+
+.col_fot {
+    flex-grow: 5;
+    width: 40%;
+}
+.col_des {
+    flex-grow: 10;
+    width: 50%;
+    padding: 0% 2%;
+	background-color:var(--marron_claro_2);
 }
 
 .visor_pdf {
