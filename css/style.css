@@ -133,14 +133,49 @@ ul.menu_bt li {
     flex-grow:1;
     flex-wrap:wrap;
 	border-right:1px solid var(--marron_oscuro);
+	border-bottom:1px solid var(--marron_oscuro);
 }
-nav {
+
+
+.menu_prod input[type="checkbox"], 
+.menu_prod .fa-bars {
+	margin: 0;
+	padding: 3px;
+	left: 0;
+	bottom: 0;
+	width: 48px;
+	height: 48px;
+	position: fixed;
+	border: none;
+	background:var(--marron_oscuro);
+	opacity: 1;
+}
+
+.menu_prod .fa-bars {
+	pointer-events: none;
+    font-size:3em;
+}
+.menu_prod i.fa-bars:before {
+	content:'+';
+}
+
+.menu_prod {
+	position: relative;
+	min-height: 48px;
+}
+.menu_prod nav {
+	display: none;
+}
+
+.menu_prod input:checked ~ nav {
+	display: block;
     position:fixed;
-    bottom:0;
+    bottom:54px;
     left:0;
+	max-width:60vw;
 }
-nav a {
-    font-size:.9em;
+.menu_prod nav a {
+    font-size:.8em;
     text-decoration:none;
     color:var(--marron_oscuro);
     flex-grow: 1;
@@ -149,7 +184,11 @@ nav a {
     flex-wrap: wrap;
     position: relative;
 }
-nav a:hover {
+.menu_prod nav a.bt_ini {
+    text-decoration:underline;
+    color:var(--naranja);
+}
+.menu_prod nav a:hover {
     color:var(--naranja);
 }
 
