@@ -128,14 +128,14 @@ ul.menu_bt {
 }
 ul.menu_bt li {
     padding:3px 10px;
-    background:#fff;
+    background:var(--blanco);
+    background-color:rgb(255,255,255,.8);
     display:flex;
     flex-grow:1;
     flex-wrap:wrap;
 	border-right:1px solid var(--marron_oscuro);
 	border-bottom:1px solid var(--marron_oscuro);
 }
-
 
 .menu_prod input[type="checkbox"], 
 .menu_prod .fa-bars {
@@ -172,10 +172,10 @@ ul.menu_bt li {
     position:fixed;
     bottom:54px;
     left:0;
-	max-width:60vw;
+	max-width:45vw;
 }
 .menu_prod nav a {
-    font-size:.8em;
+    font-size:.85em;
     text-decoration:none;
     color:var(--marron_oscuro);
     flex-grow: 1;
