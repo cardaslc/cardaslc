@@ -121,11 +121,13 @@ ul, li {
     margin: 0;
     list-style: none inside;
 }
+/*
 ul.menu_bt {
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+*/
 ul.menu_bt li {
     padding:3px 10px;
     background:var(--blanco);
@@ -141,7 +143,7 @@ ul.menu_bt li {
 .menu_prod .fa-bars {
 	margin: 0;
 	padding: 3px;
-	left: 0;
+	right: 0;
 	bottom: 0;
 	width: 48px;
 	height: 48px;
@@ -168,11 +170,11 @@ ul.menu_bt li {
 }
 
 .menu_prod input:checked ~ nav {
-	display: block;
+	display:block;
     position:fixed;
+	right: 0;
     bottom:54px;
-    left:0;
-	max-width:95vw;
+	max-width:45vw;
 }
 .menu_prod nav a {
     font-size:1em;
@@ -180,8 +182,6 @@ ul.menu_bt li {
     color:var(--marron_oscuro);
     flex-grow: 1;
     text-align: center;
-    flex-wrap: wrap;
-    position: relative;
 }
 .menu_prod nav a.bt_ini {
     text-decoration:underline;

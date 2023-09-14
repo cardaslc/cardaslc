@@ -44,7 +44,7 @@
 		padding: 0% 5%;
 	}
 	.menu_prod input:checked ~ nav {
-		max-width:40vw;
+		max-width:45vw;
 	}
 	.menu_prod nav a {
 		font-size:.8em;
