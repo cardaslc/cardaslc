@@ -42,7 +42,14 @@
 		flex-grow: 0;
 		width: 70%;
 		padding: 0% 5%;
+	}
+	.menu_prod input:checked ~ nav {
+		max-width:40vw;
+	}
+	.menu_prod nav a {
+		font-size:.8em;
+		font-weight:bold;
+	}
 }
 
 
-}
