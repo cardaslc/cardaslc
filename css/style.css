@@ -121,13 +121,11 @@ ul, li {
     margin: 0;
     list-style: none inside;
 }
-/*
 ul.menu_bt {
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-*/
 ul.menu_bt li {
     padding:3px 10px;
     background:var(--blanco);
@@ -174,7 +172,7 @@ ul.menu_bt li {
     position:fixed;
 	right: 0;
     bottom:54px;
-	max-width:45vw;
+	max-width:20vw;
 }
 .menu_prod nav a {
     font-size:1em;
