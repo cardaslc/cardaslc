@@ -19,12 +19,6 @@ body {
     background: var(--blanco);
     display: block;
 }
-
-a {
-	font-size: 1.5em;
-    color: var(--naranja);
-	font-style: italic;
-}
 p {
 	font-size: 1em;
 }
@@ -36,10 +30,10 @@ h1 {
 }
 h2 {
 	font-size: 2.5em;
-	font-weight: 900;
+	font-style: italic;
 	line-height: .7em;
 	margin-bottom: 15px;
-    color: var(--naranja);
+    color: var(--marron_medio);
 }
 h3 {
 	font-size: 1.5em;
@@ -47,6 +41,10 @@ h3 {
 	font-weight: 400;
     color: var(--marron_medio);
 }
+a {
+    color: var(--naranja);
+}
+
 .logo img {
     max-width: 85%;
     margin: 0 auto;
@@ -54,6 +52,9 @@ h3 {
 .ico {
     max-width: 20%;
     margin: 0 auto;
+}
+.grad {
+    background-image: linear-gradient(to top, rgba(255,255,255,0.8), rgba(235,224,202,1));
 }
 
 .pie,
@@ -96,6 +97,9 @@ h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 }
+#inicio {
+	padding:100px!important;
+}
 
 .producto {
     padding: 0 1%;
@@ -106,18 +110,31 @@ h3 {
 	margin: 1%;
 	flex-grow: 1;
 	align-self: stretch;
+	border-radius: 20px;
 }
 .producto a {
-	font-size:1em;
+    text-decoration:none;
 }
-.producto a:hover {
-	background-color:var(--naranja);
+.producto a:hover h2 {
+	opacity:0.8;	
+    color: var(--naranja);
+}
+
+.producto h2:before {
+	content: url('./icono_ws_blanco.png');
+	margin-right: 10px;
+    width: 8%;
+	vertical-align: middle; 
+}
+.producto a:hover .foto {
+	outline: 2px dotted #bd9386;
+	opacity:0.8;
 }
 .producto .ico {
     width: 8%;
-    margin: 0;
-	padding: 0 0 1% 0;
-	vertical-align:middle;
+    margin-right: 10px;
+    margin-top: -5px;
+	float:left;
 }
 .producto .foto {
     width: 100%;
